@@ -7,9 +7,12 @@
     <title></title>
 </head>
 <body>
-    <p>Please Input your Details Here!</p>
-    <br />
     <form id="form1" runat="server">
+        <div>
+            <asp:Panel ID="Panel1" runat="server" Width="100%">
+                <asp:Image ID="Image1" runat="server" ImageUrl ="~/images/TopBarCPF.PNG" Width="100%"/>
+            </asp:Panel>
+        </div>
         <p>
             <asp:Label ID="Label1" runat="server" Text="Full Name"></asp:Label>
         </p>
@@ -19,6 +22,12 @@
         <asp:Label ID="Label2" runat="server" Text="Age"></asp:Label>
         <p>
             <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        </p>
+        <p>
+            <asp:Label ID="Label6" runat="server" Text="Occupation"></asp:Label>
+        </p>
+        <p>
+            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
         </p>
         <p>
             <asp:Label ID="Label4" runat="server" Text="Marital Status"></asp:Label>
@@ -36,12 +45,6 @@
                 <asp:ListItem>Female</asp:ListItem>
                 <asp:ListItem>Other</asp:ListItem>
             </asp:DropDownList>
-        </p>
-        <p>
-            <asp:Label ID="Label6" runat="server" Text="Occupation"></asp:Label>
-        </p>
-        <p>
-            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
         </p>
         <p>
             &nbsp;</p>

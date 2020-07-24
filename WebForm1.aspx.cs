@@ -32,15 +32,22 @@ namespace StormWeb
             //set age tags
             if (age >= 65)
             {
-                tagsList.Add("elderly");
+                tagsList.Add("Elderly");
+            }
+            else if (age >= 35)
+            {
+                tagsList.Add("Adult");
             }
             else if (age >= 21)
             {
-                tagsList.Add("adult");
+                tagsList.Add("Young Adult");
             }
-
+            else if (age >= 16)
+            {
+                tagsList.Add("Teenager");
+            }
             else {
-                tagsList.Add("child");
+                tagsList.Add("Child");
             }
 
             //set marital status tags
@@ -91,9 +98,6 @@ namespace StormWeb
             populateTagsDatabase();
             if (IsPostBack)
             {
-                TextBox1.Text = "";
-                TextBox2.Text = "";
-                TextBox3.Text = "";
                 Response.Redirect("WebForm2.aspx");
             }
         }
